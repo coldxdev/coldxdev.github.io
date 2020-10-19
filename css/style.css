@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    background: #3C1969;
+}
+
+.header{
+    font-size: 30px;
+    
+}
+.header__inner{
+    text-align: center;
+}
+
+.header__title{
+    padding-bottom: 30px;
+}
+.header__logo{
+    padding: 50px 0 50px 100px;
+}
+
+.header__item{
+    padding: 20px 0;
+    list-style: none;
+    margin-right: 30px;
+    
+}
+.header__link{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+
+.header__link:hover{
+    color: hsl(172, 96%, 40%);
+    transition: all 1s ease;
+
+}
+
+.footer ul{
+    list-style: none;
+}
+
+.footer {
+   text-align: center;
+    font-weight: 700;
+    padding: 150px 0 20px;
+}
+
+.footer li{
+    display: inline-block;
+    padding: 0 10px;
+    position: relative;
+}
+
+.footer li + li::before{
+    content: "|";
+    position: absolute;
+    left: -5px;
+}
