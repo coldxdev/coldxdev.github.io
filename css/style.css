@@ -1,66 +1,89 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
-    background: #3C1969;
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  background: linear-gradient(180deg, #7f29a8 0%, #38007e 95.83%);
 }
 
-.header{
-    font-size: 30px;
-    
+.header {
+  font-size: 30px;
 }
-.header__inner{
-    text-align: center;
-}
-
-.header__title{
-    padding-bottom: 30px;
-}
-.header__logo{
-    padding: 50px 0 50px 100px;
+.header__inner {
+  text-align: center;
+  padding: 50px;
 }
 
-.header__item{
-    padding: 20px 0;
-    list-style: none;
-    margin-right: 30px;
-    
+.header__title {
+  padding-bottom: 30px;
 }
-.header__link{
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 600;
-    text-transform: uppercase;
-    
+.header__logo {
+  padding: 50px 0 25px 100px;
 }
 
-.header__link:hover{
-    color: hsl(172, 96%, 40%);
-    transition: all 1s ease;
-
+.header__item {
+  padding: 20px 0;
+  list-style: none;
+  margin-right: 30px;
+}
+.header__link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
-.footer ul{
-    list-style: none;
+.header__link:hover {
+  color: hsl(172, 96%, 40%);
+  transition: all 1s ease;
+}
+
+.footer ul {
+  list-style: none;
 }
 
 .footer {
-   text-align: center;
-    font-weight: 700;
-    padding: 150px 0 20px;
+  text-align: center;
+  font-weight: 700;
+  padding: 117px 0 0;
 }
 
-.footer li{
-    display: inline-block;
-    padding: 0 10px;
-    position: relative;
+.footer li {
+  display: inline-block;
+  padding: 0 10px;
+  position: relative;
 }
 
-.footer li + li::before{
-    content: "|";
-    position: absolute;
-    left: -5px;
+.footer__text {
+  font-size: 18px;
+  font-weight: 300;
+  position: relative;
+}
+.footer__text::before {
+  content: "-";
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: -4px;
+}
+
+@media (max-width: 1040px) {
+  .header__logo {
+    margin: 0 auto;
+    display: block;
+    padding: 50 0 50px 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .header__item {
+    font-size: 25px;
+  }
+}
+@media (max-width: 457px) {
+  .footer__text::before {
+    display: none;
+  }
 }
