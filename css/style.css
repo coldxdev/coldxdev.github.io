@@ -70,13 +70,7 @@ body {
   color: hsl(172, 96%, 40%);
   transition: all 1s ease;
 }
-.footer__text::before {
-  content: "-";
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: -4px;
-}
+
 
 @media (max-width: 1040px) {
   .header__logo {
@@ -95,8 +89,4 @@ body {
 }
 }
 @media (max-width: 457px) {
-  .footer__text::before {
-    display: none;
-  }
-
 }
