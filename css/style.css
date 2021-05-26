@@ -62,6 +62,14 @@ body {
   font-weight: 300;
   position: relative;
 }
+.footer__link{
+  color: #fff;
+  text-decoration: none;
+}
+.footer__link:hover {
+  color: hsl(172, 96%, 40%);
+  transition: all 1s ease;
+}
 .footer__text::before {
   content: "-";
   position: absolute;
