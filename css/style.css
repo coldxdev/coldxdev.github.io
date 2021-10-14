@@ -1,48 +1,75 @@
-* {
+html {
   box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
 body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
-  background: linear-gradient(180deg, #7f29a8 0%, #38007e 95.83%);
+  display: flex;
+  flex-direction: column;
   background-color: #3C1969;
 }
 
+
 .header {
-  font-size: 30px;
+  flex: 1 1 auto;
 }
+
 .header__inner {
-  height: 90%;
   text-align: center;
-  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.header__logo {
+  display: block;
+  max-width: 100%;
+  margin: 50px auto 100px;
 }
 
 .header__title {
-  padding-bottom: 30px;
+  padding-bottom: 15px;
+  font-size: 45px;
+  line-height: 52px;
 }
-.header__logo {
-  padding: 50px 0 25px 100px;
+
+.header__list {
+  padding-left: 0;
 }
 
 .header__item {
-  padding: 20px 0;
+  text-align: center;
+  padding: 15px 0;
   list-style: none;
-  margin-right: 30px;
 }
+
 .header__link {
   color: #ffffff;
+  font-size: 25px;
   text-decoration: none;
-  font-weight: 600;
-  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
 }
 
 .header__link:hover {
-  color: hsl(172, 96%, 40%);
-  transition: all 1s ease;
+  color: #04c8ae;
+  transition: color .4s ease, border .4s ease;
+  border-bottom: 2px solid #04c8ae;
 }
 
-.footer ul {
+.footer__list{
+  padding: 0;
   list-style: none;
 }
 
@@ -62,31 +89,35 @@ body {
   font-weight: 300;
   position: relative;
 }
-.footer__link{
+
+.footer__link {
   color: #fff;
   text-decoration: none;
+  border-bottom: 2px solid transparent;
 }
+
 .footer__link:hover {
-  color: hsl(172, 96%, 40%);
-  transition: all 1s ease;
-}
-
-
-@media (max-width: 1040px) {
-  .header__logo {
-    margin: 0 auto;
-    display: block;
-    padding: 50 0 50px 0;
-  }
+  color: #04c8ae;
+  transition: color .4s ease, border .4s ease;
+  border-bottom: 2px solid #04c8ae;
 }
 
 @media (max-width: 640px) {
   .header__item {
     font-size: 20px;
-}
-.header__title {
+  }
+
+  .header__title {
     font-size: 28px;
+  }
 }
-}
-@media (max-width: 457px) {
+
+
+@media screen and (max-width: 550px) {
+  .footer li {
+    display: block;
+    padding: 10px;
+    position: relative;
+  }
+  
 }
